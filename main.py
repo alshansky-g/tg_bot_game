@@ -6,8 +6,6 @@ from aiogram import Bot, Dispatcher
 from config.config import load_config
 from handlers import other, user
 
-# from services import services
-
 
 async def main():
     config = load_config()
