@@ -1,19 +1,19 @@
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
-button1 = KeyboardButton(text="🪨")
-button2 = KeyboardButton(text="✂️")
-button3 = KeyboardButton(text="📄")
+button_rock = KeyboardButton(text="🪨")
+button_scissors = KeyboardButton(text="✂️")
+button_paper = KeyboardButton(text="📄")
 
-keyboard = ReplyKeyboardMarkup(
-    keyboard=[[button1, button2, button3]], resize_keyboard=True
+keyboard_game_choices = ReplyKeyboardMarkup(
+    keyboard=[[button_rock], [button_scissors], [button_paper]],
+    resize_keyboard=True,
 )
 
-button4 = KeyboardButton(text="Давай!")
-button5 = KeyboardButton(text="Не хочу!")
+button_yes = KeyboardButton(text="Давай!")
+button_no = KeyboardButton(text="Не хочу!")
 
-keyboard2 = ReplyKeyboardMarkup(
-    keyboard=[[button4, button5]], resize_keyboard=True
+keyboard_yes_no = ReplyKeyboardMarkup(
+    keyboard=[[button_yes, button_no]],
+    resize_keyboard=True,
+    one_time_keyboard=True,
 )
-# keyboard3 = ReplyKeyboardMarkup(
-#     keyboard=[[button4, button5]], resize_keyboard=True
-# )
